@@ -251,8 +251,184 @@ echo do_shortcode('[layerslider id="291"]');
 
 </div>
 
+</div>
+
+<div
+	class="fl-row fl-row-full-width fl-row-bg-color fl-node-5889fb2cd656c"
+	data-node="5889fb2cd656c">
+	<div class="fl-row-content-wrap">
+		<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+			<div class="fl-col-group fl-node-595337ab4839c"
+				data-node="595337ab4839c">
+				<div class="fl-col fl-node-595337ab485a3" data-node="595337ab485a3">
+					<div class="fl-col-content fl-node-content">
+						<div class="fl-module fl-module-pp-heading fl-node-595337ab48246"
+							data-node="595337ab48246">
+							<div class="fl-module-content fl-node-content">
+								<div class="pp-heading-content">
+									<div class="pp-heading  pp-center">
+
+										<h5 class="heading-title">
 
 
+											<span class="title-text pp-primary-title">OUR PARTNERS</span>
+
+
+										</h5>
+
+									</div>
+									<div class="pp-sub-heading"></div>
+
+								</div>
+							</div>
+						</div>
+						<div
+							class="fl-module fl-module-pp-logos-grid fl-node-595b73ff7b4bc"
+							data-node="595b73ff7b4bc">
+							<div class="fl-module-content fl-node-content">
+
+								<div class="pp-logos-content clearfix">
+									<div class="bx-wrapper"
+										style="max-width: 1600px; margin: 0px auto;">
+										<div class="bx-viewport" aria-live="polite"
+											style="width: 100%; overflow: hidden; position: relative; height: 190px;">
+											<div
+												class="pp-logos-wrapper clearfix pp-logos-wrapper-loaded">
+												<div class="pp-logo pp-logo-0"
+													aria-hidden="false">
+													<div class="pp-logo-inner">
+														<div class="pp-logo-inner-wrap">
+															<img class="logo-image"
+																src="https://overwaterbungalows.com.au/wp-content/uploads/1.jpg"
+																alt="1.jpg">
+														</div>
+													</div>
+												</div>
+												<div class="pp-logo pp-logo-1"
+													aria-hidden="false">
+													<div class="pp-logo-inner">
+														<div class="pp-logo-inner-wrap">
+															<img class="logo-image"
+																src="https://overwaterbungalows.com.au/wp-content/uploads/2.jpg"
+																alt="2.jpg">
+														</div>
+													</div>
+												</div>
+												<div class="pp-logo pp-logo-2"
+													aria-hidden="false">
+													<div class="pp-logo-inner">
+														<div class="pp-logo-inner-wrap">
+															<img class="logo-image"
+																src="https://overwaterbungalows.com.au/wp-content/uploads/3.jpg"
+																alt="3.jpg">
+														</div>
+													</div>
+												</div>
+												<div class="pp-logo pp-logo-3"
+													aria-hidden="false">
+													<div class="pp-logo-inner">
+														<div class="pp-logo-inner-wrap">
+															<img class="logo-image"
+																src="https://overwaterbungalows.com.au/wp-content/uploads/4.jpg"
+																alt="4.jpg">
+														</div>
+													</div>
+												</div>
+												<div class="pp-logo pp-logo-4"
+													aria-hidden="false">
+													<div class="pp-logo-inner">
+														<div class="pp-logo-inner-wrap">
+															<img class="logo-image"
+																src="https://overwaterbungalows.com.au/wp-content/uploads/5.jpg"
+																alt="5.jpg">
+														</div>
+													</div>
+												</div>
+												<div class="pp-logo pp-logo-5"
+													aria-hidden="false">
+													<div class="pp-logo-inner">
+														<div class="pp-logo-inner-wrap">
+															<img class="logo-image"
+																src="https://overwaterbungalows.com.au/wp-content/uploads/6.jpg"
+																alt="6.jpg">
+														</div>
+													</div>
+												</div>
+												<div class="pp-logo pp-logo-6"
+													aria-hidden="true">
+													<div class="pp-logo-inner">
+														<div class="pp-logo-inner-wrap">
+															<img class="logo-image"
+																src="https://overwaterbungalows.com.au/wp-content/uploads/7.jpg"
+																alt="7.jpg">
+														</div>
+													</div>
+												</div>
+												<div class="pp-logo pp-logo-7"
+													aria-hidden="true">
+													<div class="pp-logo-inner">
+														<div class="pp-logo-inner-wrap">
+															<img class="logo-image"
+																src="https://overwaterbungalows.com.au/wp-content/uploads/8.jpg"
+																alt="8.jpg">
+														</div>
+													</div>
+												</div>
+												<div class="pp-logo pp-logo-8"
+													aria-hidden="true">
+													<div class="pp-logo-inner">
+														<div class="pp-logo-inner-wrap">
+															<img class="logo-image"
+																src="https://overwaterbungalows.com.au/wp-content/uploads/9.jpg"
+																alt="9.jpg">
+														</div>
+													</div>
+												</div>
+												<div class="pp-logo pp-logo-9"
+													aria-hidden="true">
+													<div class="pp-logo-inner">
+														<div class="pp-logo-inner-wrap">
+															<img class="logo-image"
+																src="https://overwaterbungalows.com.au/wp-content/uploads/10.jpg"
+																alt="10.jpg">
+														</div>
+													</div>
+												</div>
+												<div class="pp-logo pp-logo-10"
+													aria-hidden="true">
+													<div class="pp-logo-inner">
+														<div class="pp-logo-inner-wrap">
+															<img class="logo-image"
+																src="https://overwaterbungalows.com.au/wp-content/uploads/11.jpg"
+																alt="11.jpg">
+														</div>
+													</div>
+												</div>
+												<div class="pp-logo pp-logo-11"
+													aria-hidden="true">
+													<div class="pp-logo-inner">
+														<div class="pp-logo-inner-wrap">
+															<img class="logo-image"
+																src="https://overwaterbungalows.com.au/wp-content/uploads/12.jpg"
+																alt="12.jpg">
+														</div>
+													</div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<div class="logo-slider-next"></div>
+									<div class="logo-slider-prev"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 

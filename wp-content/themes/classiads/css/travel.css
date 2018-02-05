@@ -921,3 +921,25 @@ a.enquiry_anchor.buton_custom{
 	margin-top: 10px;
 }
 
+.travel-style .title-area{
+	margin: 10px 0 0 10px;
+	padding: 0px;
+}
+
+@media (max-width: 768px){
+	.site-header .widget-area{
+		display: none;
+	}
+	
+	.travel-style .title-area{
+		height: 80px;
+	}
+}
+
+.travel-style .js-superfish .sub-menu li, .travel-style .js-superfish .sub-menu span,
+.travel-style .js-superfish .sub-menu a, .travel-style .js-superfish .sub-menu ul
+{
+	line-height: normal;
+}
+
+

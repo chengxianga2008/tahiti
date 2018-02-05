@@ -39,6 +39,11 @@
 	
 	//Template
 	wp_enqueue_style( 'templatemo-style', get_template_directory_uri() . '/css/templatemo_style.css', array('bootstrap3-style'), '1.0.0' );
+	
+	//Template
+	wp_enqueue_style( 'dynamik-style', get_template_directory_uri() . '/css/dynamik-min.css', array(), '1.0.0' );
+	
+	wp_enqueue_style( 'layout-style', get_template_directory_uri() . '/css/2-layout.css', array(), '1.0.0' );
 
 	// Loads JavaScript file with functionality specific to classiads.
 	wp_enqueue_script( 'bootstrap3-js', get_template_directory_uri() . '/js/bootstrap3.min.js', array( 'jquery' ), '2014-07-18', true );
@@ -72,6 +77,18 @@
 	
 	// Loads JavaScript file with functionality specific to classiads.
 	wp_enqueue_script( 'templatemo_scrip', get_template_directory_uri() . '/js/templatemo_script.js', array( 'jquery', 'bootstrap3-js','mobile-customized'), '2014-07-18', true );
+	
+	wp_enqueue_script( 'superfish', get_template_directory_uri() . '/js/superfish.js', array( 'jquery'), '2014-07-18', true );
+	
+	wp_enqueue_script( 'superfish.args', get_template_directory_uri() . '/js/superfish.args.js', array( 'jquery'), '2014-07-18', true );
+	
+	wp_enqueue_script( 'jquery.bxslider.min', get_template_directory_uri() . '/js/jquery.bxslider.min.js', array( 'jquery'), '2014-07-18', true );
+	
+	
+	wp_enqueue_script( 'jquery.imagesloaded', get_template_directory_uri() . '/js/jquery.imagesloaded.js', array( 'jquery', 'jquery.bxslider.min'), '2014-07-18', true );
+	
+	wp_enqueue_script( '2-layout', get_template_directory_uri() . '/js/2-layout.js', array( 'jquery', 'jquery.imagesloaded'), '2014-07-18', true );
+	
 	
 	// load local script
 	wp_register_script( 'custom_script', get_template_directory_uri() . '/js/custom.js', array( 'jquery'), '2014-07-18', true );
@@ -277,7 +294,7 @@ DOC;
 </style>
     <?php wp_head(); ?>
     
-    <script src='https://www.google.com/recaptcha/api.js' async></script>
+<!--     <script src='https://www.google.com/recaptcha/api.js' async></script> -->
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -287,154 +304,147 @@ DOC;
     <![endif]-->
 
   </head>
-  <body class="travel-style">
-  <div id="templatemo_mobile_menu_wap" class="col-xs-12 visible-sm visible-xs">
-        <p id="mobile_menu_btn"> <span class="glyphicon glyphicon-align-justify"></span></p>
-        <div id="mobile_menu" style="display: none;">
-            <div id="mobile_menu_hide_div">
-            <ul class="nav nav-stacked">
-              <li><a id="mobile_menu_hide_btn" href="#"><span class="glyphicon glyphicon-align-justify"></span></a>
-              </li>
-            </ul>
-            </div>
-            <div>
-            <!--<form action="<?php echo get_home_url(null,"package-search"); ?>" method="get">                 
-                        <div class="date-mobile" >
-                          <input class="date-input-top" placeholder="Departure Date" data-provide="datepicker" data-date-format="yyyy-mm-dd" data-date-start-date="-1d" name="date" type="text">
-                          <input id="des-hidden_mobile" name="des" type="hidden">
-                          <input id="des-text-hidden_mobile" name="des-text" type="hidden">
-                        </div>
-                        <div class="dropdown" >
-                        <button class="btn btn-default dropdown-toggle" id="package_dropdown_mobile" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-                           Destination
-                           <span class="caret"></span>
-                        </button>
-                        <ul id="package_list_mobile" class="dropdown-menu" role="menu" aria-labelledby="package_dropdown_mobile">
-                         
-   		    			  <?php 
-   		    			  $term_args = array( 'hide_empty=0' );
-   					  
-   		    			  $terms = get_terms( 'package_taxonomy', $term_args );
-   		    			  foreach ( $terms as $term ) {
-   		    			  ?>
-   	    				  <li role="presentation">
-     					  	  <a role="menuitem" tabindex="-1" href="#" data-slug="<?php echo $term->slug; ?>" ><?php echo $term->name; ?></a>
-   		    			  </li>
-   					  	
-   					      <?php
-   				    	  }
-   				    	  ?>
- 					    
- 					    </ul>
-                        </div>
-                        <div class="submit-mobile">
-                      
-                          <button id="package_search_submit_mobile" class="btn btn-warning submit-mobile-button" type="submit" value="Search">
-						    <i class="fa fa-search"></i> Search
-					      </button>
-                     
-                        </div>
- 			</form>-->
- 			</div>
-        
-            <ul class="nav nav-pills nav-stacked menu-mobile">
-                <li><a id="mobile_menu_phone" href="tel:1300241745"> <strong class="fa-phone"> 1300 241 745</strong></a></li>
-                <li><a href="<?php echo get_home_url();?>"><strong>Home Page </strong></a></li>
-                <li><a href="http://holidays.tahitiholiday.com/?pl=3"><strong>Holiday </strong></a></li>
-                <li><a href="http://honeymoon.tahitiholiday.com/?pl=4"><strong>Honeymoon</strong></a></li>
-                <?php if(!$hide_enquiry){?> 
-                <li><a id="enquiry-button-1" href="<?php echo get_home_url(null,"package-enquiry"); ?>"><strong>ENQUIRY</strong></a></li>
-                <?php } ?>
-                
-            </ul>
-        </div>
-  </div>
+  <body class="travel-style home page-template-default page page-id-2 fl-builder full-width-content windows chrome feature-top-outside site-fluid override fl-builder-page-builder gd-full-width responsive-menu-slide-left">
 
-  <div id="templatemo_banner_top" class="container_wapper" style="background:#fff !important;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-					<div class="visible-lg visible-md center-block visible-xs visible-sm logo-group-block">
-						<a href="<?php echo get_home_url();?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="logo"/></a>
+	<div class="site-header-top">
+		<div class="wrap">
+			<div id="header_top_left"
+				class="widget-area dynamik-widget-area header-top">
+				<section id="text-7"
+					class="widget-odd widget-last widget-first widget-1 widget widget_text">
+					<div class="widget-wrap">
+						<div class="textwidget">
+							<p>
+								<a href="reservations@tahitirooms.com"
+									class="header-top-email">reservations@tahitirooms.com</a>
+							</p>
+						</div>
 					</div>
-                </div>
-                <div class="col-md-8 header-p right">
-                  <div class="row">
-                    
-                      <div class="col-lg-1 col-md-1">
-                      </div>
-                      
-                    
-                     <!-- <form action="<?php echo get_home_url(null,"package-search"); ?>" method="get">                 
-                        <div class="col-md-3 remove-right-padding">
-                          <input class="date-input-top" placeholder="Departure Date" data-provide="datepicker" data-date-format="yyyy-mm-dd" data-date-start-date="-1d" name="date" type="text">
-                          <input id="des-hidden" name="des" type="hidden">
-                          <input id="des-text-hidden" name="des-text" type="hidden">
-                        </div>
-                        <div class="col-md-2 dropdown remove-right-padding">
-                        <button class="btn btn-default dropdown-toggle" id="package_dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-                           Destination
-                           <span class="caret"></span>
-                        </button>
-                        <ul id="package_list" class="dropdown-menu" role="menu" aria-labelledby="package_dropdown">
-                         
-   		    			  <?php 
-   		    			  $term_args = array( 'hide_empty=0' );
-   					  
-   		    			  $terms = get_terms( 'package_taxonomy', $term_args );
-   		    			  foreach ( $terms as $term ) {
-   		    			  ?>
-   	    				  <li role="presentation">
-     					  	  <a role="menuitem" tabindex="-1" href="#" data-slug="<?php echo $term->slug; ?>" ><?php echo $term->name; ?></a>
-   		    			  </li>
-   					  	
-   					      <?php
-   				    	  }
-   				    	  ?>
- 					    
- 					    </ul>
-                        </div>
-                        <div class="visible-lg col-lg-1">
-                      
-                          <button id="package_search_submit1" type="submit" value="Search">
-						    <i class="fa fa-search"></i>
-					      </button>
-                     
-                        </div>
-                        
-                        <div class="visible-md col-md-1">
-                      
-                          <button id="package_search_submit2" type="submit" value="Search">
-						    <i class="fa fa-search"></i>
-					      </button>
-                     
-                        </div>
-                        
- 					  </form>-->
- 					  <div class="row remove-left-padding">
-<!-- 				    	<a href="<?php echo get_home_url();?>#package_text_anchor" class="getquote_anchor quote buton_custom"  id="SliderPackagesbtn">Plan Your Trip</a> -->		    	
- 				    	 
-<!--  				    	 
- 				    	 <a href="#package_text_anchor" class="getquote_anchor quote buton_custom hidden-sm hidden-xs"  id="SliderPackagesbtn">
-                               Packages
-                         </a>--> 
- 				    	<?php if(!$hide_enquiry){?> 
- 				    	<a class="btn enquiry_anchor book-now1 buton_custom hidden-sm hidden-xs" href="#" data-toggle="modal" data-target="#enquiryModal" data-package_quote="general">Enquire</a>  
-						<?php } ?>
-						<a class="phone-txt mob_txt mob_align hidden-sm hidden-xs" href="tel:1300241745">1300 241 745</a>
+				</section>
+			</div>
+			<div id="header_top_right"
+				class="widget-area dynamik-widget-area header-top">
+				<section id="text-6"
+					class="widget-odd widget-last widget-first widget-1 widget widget_text">
+					<div class="widget-wrap">
+						<div class="textwidget">
+							<p>
+								Speak to an Agent (Mon – Sat 9 AM – 5:30 PM) <a
+									class="header-top-phone" href="tel:1300256067">1300<span
+									class="blue">.</span>241<span class="blue">.</span>745
+								</a> <i class="fa fa-user"
+									style="color: #00afef; padding-left: 20px;" aria-hidden="true"></i>
+								<a style="color: #00afef;"
+									href="https://overwaterbungalows.reslogic.com/?pl=6&amp;screen=scnlogonta"
+									target="_blank" rel="nofollow noopener">Travel Agent Login</a>
+							</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
 
- 				      </div>
-                   
- 				
- 					
- 				  </div>
-                </div>
-               
-                
-            </div>
-        </div>
-  </div>
-  <!--
+
+
+	<header class="site-header" itemscope=""
+		itemtype="https://schema.org/WPHeader">
+		<div class="wrap">
+			<div class="title-area">
+				<p class="site-title" itemprop="headline">
+					<a href="<?php echo get_home_url();?>"
+						title="Tahiti Holidays"><img
+						src="<?php bloginfo('template_url'); ?>/images/logo.png"
+						alt="Tahiti Holidays"></a>
+				</p>
+			</div>
+			<div class="widget-area header-widget-area">
+				<section id="nav_menu-2"
+					class="widget-odd widget-last widget-first widget-1 widget widget_nav_menu">
+					<div class="widget-wrap">
+						<nav class="nav-header" itemscope=""
+							itemtype="https://schema.org/SiteNavigationElement">
+							<ul id="menu-header-menu"
+								class="menu genesis-nav-menu js-superfish "
+								style="touch-action: pan-y;">
+								<li id="menu-item-180"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-180"><a
+									href="<?php echo get_home_url();?>" itemprop="url"><span
+										itemprop="name">Home</span></a></li>
+								<li id="menu-item-178"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-178"><a
+									href="javascript:;"
+									itemprop="url" class="sf-with-ul"><span itemprop="name">Packages</span></a>
+									<ul class="sub-menu" style="display: none;">
+										 <?php
+											
+											$tahiti = get_term_by('slug', 'tahiti', 'package_taxonomy');
+											
+											$term_args = array (
+													'hide_empty'=>true,
+													'parent'=> $tahiti->term_id, 
+											);
+											
+											$terms = get_terms ( 'package_taxonomy', $term_args );
+											foreach ( $terms as $term ) {
+												?>
+											<li 
+											class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+											href="<?php echo get_term_link( $term->slug, "package_taxonomy" );?>"
+											itemprop="url"><span itemprop="name"><?php echo $term->name; ?></span></a></li>
+
+										<?php
+											}
+											?>
+									
+									
+										
+									</ul></li>
+								<li id="menu-item-177"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-177"><a
+									href="https://overwaterbungalows.com.au/destinations/"
+									itemprop="url" class="sf-with-ul"><span itemprop="name">Travel
+											Guide</span></a>
+									<ul class="sub-menu" style="display: none;">
+										<?php
+											
+											$tahiti = get_term_by('slug', 'tahiti', 'package_taxonomy');
+											
+											$term_args = array (
+													'hide_empty'=>true,
+													'parent'=> $tahiti->term_id, 
+											);
+											
+											$terms = get_terms ( 'package_taxonomy', $term_args );
+											foreach ( $terms as $term ) {
+												?>
+											<li 
+											class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+											href="<?php echo get_term_link( $term->slug, "package_taxonomy" );?>"
+											itemprop="url"><span itemprop="name"><?php echo $term->name; ?></span></a></li>
+
+										<?php
+											}
+											?>
+									</ul></li>
+								<li id="menu-item-179"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-179"><a
+									href="https://overwaterbungalows.com.au/blog/" itemprop="url"><span
+										itemprop="name">Blog</span></a></li>
+								<li id="menu-item-175"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a
+									href="<?php echo get_home_url(null, 'about-us'); ?>"
+									itemprop="url"><span itemprop="name">About Us</span></a></li>
+							</ul>
+						</nav>
+					</div>
+				</section>
+			</div>
+		</div>
+	</header>
+
+
+	<!--
  <div id="templatemo_banner_logo" class="container_wapper">
         <div class="container">
             <div class="row">
