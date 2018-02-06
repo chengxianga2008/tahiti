@@ -305,8 +305,125 @@
 <?php 	
   } 
 ?>
-	
-   <div id="call-us-bottom" class="visible-xs container_wapper">
+
+<button id="responsive-menu-button"
+	class="responsive-menu-button responsive-menu-boring responsive-menu-accessible"
+	type="button" aria-label="Menu">
+
+
+	<span class="responsive-menu-box"> <span class="responsive-menu-inner"></span>
+	</span>
+
+</button>
+
+<div id="responsive-menu-container" class="slide-left">
+	<div id="responsive-menu-wrapper">
+		<div id="responsive-menu-title">
+			<a href="<?php echo get_home_url();?>" target="_self">
+
+				<div id="responsive-menu-title-image">
+					<img alt=""
+						src="<?php bloginfo('template_url'); ?>/images/logo.png">
+				</div>
+
+			</a> <a href="<?php echo get_home_url();?>" target="_self"> </a>
+		</div>
+		<ul id="responsive-menu" class="">
+			<li id="responsive-menu-item-180"
+				class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item responsive-menu-item responsive-menu-current-item"><a
+				class="responsive-menu-item-link"
+				href="<?php echo get_home_url();?>" itemprop="url">Home</a></li>
+			<li id="responsive-menu-item-178"
+				class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children responsive-menu-item responsive-menu-item-has-children"><a
+				class="responsive-menu-item-link"
+				href="javascript:;" itemprop="url">Packages
+					<div class="responsive-menu-subarrow">▼</div>
+			</a>
+			<ul class="responsive-menu-submenu responsive-menu-submenu-depth-1">
+					<?php
+								$tahiti = get_term_by ( 'slug', 'tahiti', 'package_taxonomy' );
+								
+								$term_args = array (
+										'hide_empty' => true,
+										'parent' => $tahiti->term_id 
+								);
+								
+								$terms = get_terms ( 'package_taxonomy', $term_args );
+								foreach ( $terms as $term ) {
+									?>
+
+									
+
+						  <li
+						class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a
+						class="responsive-menu-item-link"
+						href="<?php echo get_term_link( $term->slug, "package_taxonomy" );?>"
+						itemprop="url"><?php echo $term->name; ?></a></li>
+
+   					      <?php
+
+   				    	  }
+
+   				    	  ?>
+					
+				</ul></li>
+			<li id="responsive-menu-item-177"
+				class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children responsive-menu-item responsive-menu-item-has-children"><a
+				class="responsive-menu-item-link"
+				href="javascript:;"
+				itemprop="url">Travel Guide
+					<div class="responsive-menu-subarrow">▼</div>
+			</a>
+			<ul class="responsive-menu-submenu responsive-menu-submenu-depth-1">
+					  	<?php
+								$tahiti = get_term_by ( 'slug', 'tahiti', 'package_taxonomy' );
+								
+								$term_args = array (
+										'hide_empty' => true,
+										'parent' => $tahiti->term_id 
+								);
+								
+								$terms = get_terms ( 'package_taxonomy', $term_args );
+								foreach ( $terms as $term ) {
+									?>
+
+									
+
+						  <li
+						class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a
+						class="responsive-menu-item-link"
+						href="<?php echo get_term_link( $term->slug, "package_taxonomy" );?>"
+						itemprop="url"><?php echo $term->name; ?></a></li>
+
+   					      <?php
+
+   				    	  }
+
+   				    	  ?>
+			
+			
+					
+					
+				</ul></li>
+			<li id="responsive-menu-item-179"
+				class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a
+				class="responsive-menu-item-link"
+				href="" itemprop="url">Blog</a></li>
+			<li id="responsive-menu-item-383"
+				class="popmake-514 menu-item menu-item-type-custom menu-item-object-custom responsive-menu-item pum-trigger"
+				style="cursor: pointer;"><a class="responsive-menu-item-link"
+				href="<?php echo get_home_url(null,"package-enquiry"); ?>" itemprop="url">Get A Quote</a></li>
+			<li id="responsive-menu-item-175"
+				class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a
+				class="responsive-menu-item-link"
+				href="https://overwaterbungalows.com.au/about-us/" itemprop="url">About
+					Us</a></li>
+		</ul>
+		<div id="responsive-menu-additional-content"></div>
+	</div>
+</div>
+
+<div id="call-us-bottom" class="visible-xs container_wapper">
         <div class="container">
             <div class="row-fluid">
                <div>

@@ -43,6 +43,8 @@
 	//Template
 	wp_enqueue_style( 'dynamik-style', get_template_directory_uri() . '/css/dynamik-min.css', array(), '1.0.0' );
 	
+	wp_enqueue_style( 'responsive-menu', get_template_directory_uri() . '/css/responsivemenu.css', array(), '1.0.0' );
+	
 	wp_enqueue_style( 'layout-style', get_template_directory_uri() . '/css/2-layout.css', array(), '1.0.0' );
 
 	// Loads JavaScript file with functionality specific to classiads.
@@ -88,6 +90,8 @@
 	wp_enqueue_script( 'jquery.imagesloaded', get_template_directory_uri() . '/js/jquery.imagesloaded.js', array( 'jquery', 'jquery.bxslider.min'), '2014-07-18', true );
 	
 	wp_enqueue_script( '2-layout', get_template_directory_uri() . '/js/2-layout.js', array( 'jquery', 'jquery.imagesloaded'), '2014-07-18', true );
+	
+	wp_enqueue_script( 'responsive-menu', get_template_directory_uri() . '/js/responsivemenu.js', array( 'jquery'), '2014-07-18', true );
 	
 	
 	// load local script
@@ -353,7 +357,7 @@ DOC;
 			<div class="title-area">
 				<p class="site-title" itemprop="headline">
 					<a href="<?php echo get_home_url();?>"
-						title="Tahiti Holidays"><img
+						title="Tahiti Holidays"><img style="height: 64px;"
 						src="<?php bloginfo('template_url'); ?>/images/logo.png"
 						alt="Tahiti Holidays"></a>
 				</p>
@@ -431,6 +435,10 @@ DOC;
 									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-179"><a
 									href="https://overwaterbungalows.com.au/blog/" itemprop="url"><span
 										itemprop="name">Blog</span></a></li>
+								<li id="menu-item-383"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-383"
+									style="cursor: pointer;"><a href="#" data-toggle="modal" data-target="#enquiryModal" data-package_quote="general" itemprop="url"><span
+										itemprop="name">Get A Quote</span></a></li>
 								<li id="menu-item-175"
 									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-175"><a
 									href="<?php echo get_home_url(null, 'about-us'); ?>"
