@@ -959,3 +959,19 @@ a.enquiry_anchor.buton_custom{
     font-style: normal;
 }
 
+.travel-style div.fl-node-596756be31438 .pp-heading-content .pp-heading .heading-title span.pp-primary-title{
+	font-size: 26px;
+	font-family: "Open Sans", sans-serif;
+	    color: #252525;
+	font-weight: 600;
+}
+
+.travel-style div.fl-node-5967569db8e09 .pp-heading-content .pp-sub-heading p{
+	text-align: left;
+	margin-bottom: 10px;
+	color: #555;
+}
+
+.travel-style .fl-node-5967558a8327f > .fl-row-content-wrap{
+	background-image: url(../images/Le-Meridien-Header.jpg);
+}

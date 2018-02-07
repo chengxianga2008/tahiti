@@ -14,7 +14,7 @@
 	    		
 	    		<div class="clearfix"></div>
 
-   				  <div id="bottom_description" class="row">
+   				  <div id="bottom_description" class="row" style="display: none;">
       				<div id="bottom_text_des" class="visible-xs visible-sm col-md-12">
       				<?php 
   
@@ -370,41 +370,9 @@
 			<li id="responsive-menu-item-177"
 				class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children responsive-menu-item responsive-menu-item-has-children"><a
 				class="responsive-menu-item-link"
-				href="javascript:;"
+				href="<?php echo get_home_url(null, 'travel-guide');?>"
 				itemprop="url">Travel Guide
-					<div class="responsive-menu-subarrow">▼</div>
-			</a>
-			<ul class="responsive-menu-submenu responsive-menu-submenu-depth-1">
-					  	<?php
-								$tahiti = get_term_by ( 'slug', 'tahiti', 'package_taxonomy' );
-								
-								$term_args = array (
-										'hide_empty' => true,
-										'parent' => $tahiti->term_id 
-								);
-								
-								$terms = get_terms ( 'package_taxonomy', $term_args );
-								foreach ( $terms as $term ) {
-									?>
-
-									
-
-						  <li
-						class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a
-						class="responsive-menu-item-link"
-						href="<?php echo get_term_link( $term->slug, "package_taxonomy" );?>"
-						itemprop="url"><?php echo $term->name; ?></a></li>
-
-   					      <?php
-
-   				    	  }
-
-   				    	  ?>
-			
-			
-					
-					
-				</ul></li>
+			</a></li>
 			<li id="responsive-menu-item-179"
 				class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a
 				class="responsive-menu-item-link"
@@ -416,7 +384,7 @@
 			<li id="responsive-menu-item-175"
 				class=" menu-item menu-item-type-post_type menu-item-object-page responsive-menu-item"><a
 				class="responsive-menu-item-link"
-				href="https://overwaterbungalows.com.au/about-us/" itemprop="url">About
+				href="<?php echo get_home_url(null, 'about-us'); ?>" itemprop="url">About
 					Us</a></li>
 		</ul>
 		<div id="responsive-menu-additional-content"></div>
@@ -537,12 +505,12 @@
         <div class="container">
            <div class="row">
                <div class="hidden-xs">
-                	<p>Copyright © 2016 <strong> <a href="#">Tahiti Holidays</a></strong> ·Powered by <strong><a href="#"> Tahiti Holidays</a></strong>·<strong><a href="<?php echo get_home_url(null,"/terms-and-conditions"); ?>">T&amp;C</a></strong> · <strong><a href="<?php echo get_home_url(null,"/privacy-policy"); ?>">Privacy Policy</a></strong> <!--  · <strong><a href="<?php echo get_home_url(null,"/special-conditions"); ?>">Special Conditions</a></strong>--> </p>
+                	<p>Copyright © 2018 <strong> <a href="#">Tahiti Holidays</a></strong> ·Powered by <strong><a href="#"> Tahiti Holidays</a></strong>·<strong><a href="<?php echo get_home_url(null,"/terms-and-conditions"); ?>">T&amp;C</a></strong> · <strong><a href="<?php echo get_home_url(null,"/privacy-policy"); ?>">Privacy Policy</a></strong> <!--  · <strong><a href="<?php echo get_home_url(null,"/special-conditions"); ?>">Special Conditions</a></strong>--> </p>
             
                 </div>
                 <div class="visible-xs col-xs-12">
                     <div>
-                    	<p>Copyright © 2016 <strong> <a href="#">Tahiti Holidays</a></strong> · <strong><a href="<?php echo get_home_url(null,"/terms-and-conditions"); ?>">T&amp;C</a></strong>  </p> 
+                    	<p>Copyright © 2018 <strong> <a href="#">Tahiti Holidays</a></strong> · <strong><a href="<?php echo get_home_url(null,"/terms-and-conditions"); ?>">T&amp;C</a></strong>  </p> 
                     </div>
 
                     <div class="clearfix">

@@ -46,6 +46,11 @@
 	wp_enqueue_style( 'responsive-menu', get_template_directory_uri() . '/css/responsivemenu.css', array(), '1.0.0' );
 	
 	wp_enqueue_style( 'layout-style', get_template_directory_uri() . '/css/2-layout.css', array(), '1.0.0' );
+	
+	wp_enqueue_style( 'layout-style1', get_template_directory_uri() . '/css/167-layout.css', array(), '1.0.0' );
+	
+	wp_enqueue_style( 'layout-style2', get_template_directory_uri() . '/css/424-layout.css', array(), '1.0.0' );
+	
 
 	// Loads JavaScript file with functionality specific to classiads.
 	wp_enqueue_script( 'bootstrap3-js', get_template_directory_uri() . '/js/bootstrap3.min.js', array( 'jquery' ), '2014-07-18', true );
@@ -90,6 +95,9 @@
 	wp_enqueue_script( 'jquery.imagesloaded', get_template_directory_uri() . '/js/jquery.imagesloaded.js', array( 'jquery', 'jquery.bxslider.min'), '2014-07-18', true );
 	
 	wp_enqueue_script( '2-layout', get_template_directory_uri() . '/js/2-layout.js', array( 'jquery', 'jquery.imagesloaded'), '2014-07-18', true );
+	
+	wp_enqueue_script( '424-layout', get_template_directory_uri() . '/js/424-layout.js', array( 'jquery', ), '2014-07-18', true );
+	
 	
 	wp_enqueue_script( 'responsive-menu', get_template_directory_uri() . '/js/responsivemenu.js', array( 'jquery'), '2014-07-18', true );
 	
@@ -406,31 +414,10 @@ DOC;
 									</ul></li>
 								<li id="menu-item-177"
 									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-177"><a
-									href="https://overwaterbungalows.com.au/destinations/"
+									href="<?php echo get_home_url(null, 'travel-guide');?>"
 									itemprop="url" class="sf-with-ul"><span itemprop="name">Travel
 											Guide</span></a>
-									<ul class="sub-menu" style="display: none;">
-										<?php
-											
-											$tahiti = get_term_by('slug', 'tahiti', 'package_taxonomy');
-											
-											$term_args = array (
-													'hide_empty'=>true,
-													'parent'=> $tahiti->term_id, 
-											);
-											
-											$terms = get_terms ( 'package_taxonomy', $term_args );
-											foreach ( $terms as $term ) {
-												?>
-											<li 
-											class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
-											href="<?php echo get_term_link( $term->slug, "package_taxonomy" );?>"
-											itemprop="url"><span itemprop="name"><?php echo $term->name; ?></span></a></li>
-
-										<?php
-											}
-											?>
-									</ul></li>
+							    </li>
 								<li id="menu-item-179"
 									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-179"><a
 									href="https://overwaterbungalows.com.au/blog/" itemprop="url"><span
