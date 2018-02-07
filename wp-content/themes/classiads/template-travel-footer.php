@@ -424,17 +424,116 @@
 </div>
 
 <div id="call-us-bottom" class="visible-xs container_wapper">
-        <div class="container">
-            <div class="row-fluid">
-               <div>
-                	<!--  <a class="center-block" href="tel:1300 650 965"> <strong> Call us: 1300 650 965</strong></a> -->
-               </div>
-            </div>
-        </div>
-   </div>
+	<div class="container">
+		<div class="row-fluid">
+			<div>
+				<!--  <a class="center-block" href="tel:1300 650 965"> <strong> Call us: 1300 650 965</strong></a> -->
+			</div>
+		</div>
+	</div>
+</div>
 
-    
-   <div id="templatemo_footer" class="container_wapper">
+<div
+	class="fl-row fl-row-full-width fl-row-bg-photo fl-node-596737ad00a3a"
+	data-node="596737ad00a3a">
+	<div class="fl-row-content-wrap">
+		<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+			<div class="fl-col-group fl-node-596737acea492"
+				data-node="596737acea492">
+				<div class="fl-col fl-node-596737acea4e8 fl-col-has-cols"
+					data-node="596737acea4e8">
+					<div class="fl-col-content fl-node-content">
+						<div class="fl-module fl-module-pp-heading fl-node-596737acea524"
+							data-node="596737acea524">
+							<div class="fl-module-content fl-node-content">
+								<div class="pp-heading-content">
+									<div class="pp-heading  pp-center">
+
+										<h5 class="heading-title">
+
+
+											<span class="title-text pp-primary-title">SUBSCRIBE FOR
+												EXCLUSIVE SPECIAL DEALS</span>
+
+
+										</h5>
+
+									</div>
+									<div class="pp-sub-heading"></div>
+
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="fl-col-group fl-node-596737acea55f fl-col-group-nested"
+							data-node="596737acea55f">
+							<div class="fl-col fl-node-596737acea599 fl-col-small"
+								data-node="596737acea599">
+								<div class="fl-col-content fl-node-content"></div>
+							</div>
+							<div class="fl-col fl-node-596737acea5d1 fl-col-small"
+								data-node="596737acea5d1">
+								<div class="fl-col-content fl-node-content">
+									<div
+										class="fl-module fl-module-rich-text fl-node-596737acea642"
+										data-node="596737acea642">
+										<div class="fl-module-content fl-node-content">
+											<div class="fl-rich-text">
+												<p></p>
+												<div role="form" class="wpcf7" id="wpcf7-f157-p2-o1"
+													lang="en-US" dir="ltr">
+													<div class="screen-reader-response"></div>
+													<form action="/#wpcf7-f157-p2-o1" method="post"
+														class="wpcf7-form" novalidate="novalidate">
+														<div style="display: none;">
+															<input type="hidden" name="_wpcf7" value="157"> <input
+																type="hidden" name="_wpcf7_version" value="5.0"> <input
+																type="hidden" name="_wpcf7_locale" value="en_US"> <input
+																type="hidden" name="_wpcf7_unit_tag"
+																value="wpcf7-f157-p2-o1"> <input type="hidden"
+																name="_wpcf7_container_post" value="2">
+														</div>
+														<div class="cta-form-wrap">
+															<div class="three-fourths first">
+																<span class="wpcf7-form-control-wrap classcta-email"><input
+																	type="email" name="class:cta-email" value="" size="40"
+																	class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+																	aria-required="true" aria-invalid="false"
+																	placeholder="E-Mail Address *"></span>
+															</div>
+															<div class="one-fourth">
+																<input type="submit" value="SUBMIT"
+																	class="wpcf7-form-control wpcf7-submit cta-submit"><span
+																	class="ajax-loader"></span>
+															</div>
+														</div>
+														<input type="hidden" class="wpcf7-pum"
+															value="{&quot;closepopup&quot;:false,&quot;closedelay&quot;:0,&quot;openpopup&quot;:false,&quot;openpopup_id&quot;:0}">
+														<div class="wpcf7-response-output wpcf7-display-none"></div>
+													</form>
+												</div>
+												<p></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="fl-col fl-node-596737acea60a fl-col-small"
+								data-node="596737acea60a">
+								<div class="fl-col-content fl-node-content"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="templatemo_footer" class="container_wapper">
         <div class="container">
            <div class="row">
                <div class="hidden-xs">

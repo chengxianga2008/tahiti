@@ -37,7 +37,7 @@ echo do_shortcode('[layerslider id="291"]');
 
 
                   <div class="row">
-<div class="prosenjitdiv">  
+<div class="prosenjitdiv" style="display:none;">  
 
 
 					<div class="plan-trip-dropdown btn-group">
