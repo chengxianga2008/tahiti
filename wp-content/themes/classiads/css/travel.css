@@ -975,3 +975,18 @@ a.enquiry_anchor.buton_custom{
 .travel-style .fl-node-5967558a8327f > .fl-row-content-wrap{
 	background-image: url(../images/Le-Meridien-Header.jpg);
 }
+
+.travel-style div.fl-node-5967569db8e09 .pp-heading-content .pp-sub-heading span{
+	display: block;
+    text-align: left;
+    font-weight: 700;	
+}
+
+.travel-style div.wpcf7-response-output{
+	display: inline-block !important;
+	color: #fff;
+}
+
+.travel-style .wpcf7-not-valid-tip{
+	color: #fff;
+}

@@ -98,6 +98,7 @@
 	
 	wp_enqueue_script( '424-layout', get_template_directory_uri() . '/js/424-layout.js', array( 'jquery', ), '2014-07-18', true );
 	
+	wp_enqueue_script( 'wpf7', get_template_directory_uri() . '/js/wpf7.js', array( 'jquery', ), '2014-07-18', true );	
 	
 	wp_enqueue_script( 'responsive-menu', get_template_directory_uri() . '/js/responsivemenu.js', array( 'jquery'), '2014-07-18', true );
 	

@@ -80,6 +80,9 @@
 											<p>As a preferred partner of Tahiti Tourism & Air Tahiti Nui we are one of Australia’s leading Tahiti specialists taking you to Tahiti & her Islands. Let our unbiased firsthand knowledge enhance your adventure.</p>
 											<p>Whether you are planning a Honeymoon, Anniversary, Holiday or simply a break from it all, you can rely on Tahiti Rooms for our extensive understanding of each property and their entire range of villas, suites and Overwater bungalows that we feature within our exclusive collection.</p>
 											<p>BEST PRICE GUARANTEE: Our world class, international hotels and resorts are of the highest standard and our long-term relationships with our resorts and tour operators ensure you receive the best price. Book your Tahiti adventure with Tahiti Rooms and benefit from our first-hand knowledge.</p>
+											<p>
+											<span class="address">Suite 3, Level 27 Governor Macquarie Tower</span>
+											<span class="address">1 Farrer Place Sydney NSW 2000</span>
 										</div>
 
 									</div>

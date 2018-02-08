@@ -619,6 +619,12 @@
           });
    </script>
 
+   <script>
+   /* <![CDATA[ */
+	var wpcf7 = {"apiSettings":{"root":"<?php echo get_home_url(null); ?>","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+   /* ]]> */
+   </script>
+
    
    <?php wp_footer(); ?>
    </body>
