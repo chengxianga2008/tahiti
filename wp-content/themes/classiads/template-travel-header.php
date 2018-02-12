@@ -317,7 +317,7 @@ DOC;
     <![endif]-->
 
   </head>
-  <body class="travel-style home page-template-default page page-id-2 fl-builder full-width-content windows chrome feature-top-outside site-fluid override fl-builder-page-builder gd-full-width responsive-menu-slide-left">
+  <body class="travel-style page-template-default page fl-builder full-width-content windows chrome feature-top-outside site-fluid override fl-builder-page-builder gd-full-width responsive-menu-slide-left">
 
 	<div class="site-header-top">
 		<div class="wrap">

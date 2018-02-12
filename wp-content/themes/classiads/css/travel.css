@@ -753,7 +753,7 @@ backface-visibility: hidden;
 }
 
 .banner-fixed-offset{
-	margin-top: 81px;
+	margin-top: 10px;
 }
 
 .plan-trip-dropdown >a.buton_custom{
@@ -989,4 +989,22 @@ a.enquiry_anchor.buton_custom{
 
 .travel-style .wpcf7-not-valid-tip{
 	color: #fff;
+}
+
+.travel-style .percentage{
+	max-width: 110px;
+}
+
+.travel-style h3{
+	line-height: 1.25;
+}
+
+.travel-style h5{
+	font-size: 20px;
+}
+
+.travel-style .entry-content ul li{
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
 }
